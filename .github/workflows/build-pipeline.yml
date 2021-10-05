@@ -31,6 +31,16 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+  typescript lint and format check
+        run: npm run lint:ts
+      - name: Run styles lint and format check
+        run: npm run lint:css
+      - name: "Hello world when tests run"
+        run: echo "Hello $FIRST_NAME $MIDDLE_NAME $LAST_NAME, today tests worked!"
+        env:
+          FIRST_NAME: Siri
+          MIDDLE_NAME: Holde
+          LAST_NAME: Hegsvold
   deploy:
     runs-on: ubuntu-latest
     steps:
