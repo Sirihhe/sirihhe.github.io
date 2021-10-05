@@ -1,5 +1,4 @@
-name: AccentureWorkshop
-
+name: Github Actions Workshop
 on:
   push:
     branches: [ develop ]
